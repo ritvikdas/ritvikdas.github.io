@@ -175,7 +175,7 @@ body.nav-active { overflow: hidden; }
 
 .social-link:is(:hover, :focus-visible) { transform: translateY(-3px); }
 
-.section { padding-block: var(--section-padding);}
+.section { padding-block: var(--section-padding); }
 
 .w-100 { width: 100%; }
 
@@ -360,8 +360,6 @@ body.nav-active { overflow: hidden; }
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
-/* Media query for smaller screens (e.g., mobile devices) */
-
 
 .hero {
   padding-block-start: calc(var(--section-padding) + 50px);
@@ -375,8 +373,7 @@ body.nav-active { overflow: hidden; }
 
 .hero-banner {
   position: relative;
-  height: auto;
-  max-width: 100%;
+  max-width: max-content;
   margin-inline: auto;
 }
 
@@ -400,14 +397,15 @@ body.nav-active { overflow: hidden; }
 
 .hero-content { text-align: center; }
 
-.hero .section-text { margin-block: 24px 48px; }
+.hero .section-text { margin-block: 24px 36px; }
 
 .btn-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 12px;                                                               
+  gap: 12px;
+}
 
 
 
@@ -442,7 +440,7 @@ body.nav-active { overflow: hidden; }
 
 .progress-fill { height: inherit; }
 
-.about-card { text-align: center; align-items: center;  }
+.about-card { text-align: center; }
 
 .about-card .card-icon {
   max-width: max-content;
@@ -647,7 +645,7 @@ textarea.input-field {
    * CONTACT
    */
 
-  .contact .section-text { --fs-5:1.8rem; }
+  .contact .section-text { --fs-5: 1.8rem; }
 
   .input-wrapper {
     display: flex;
