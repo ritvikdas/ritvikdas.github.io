@@ -409,6 +409,21 @@ body.nav-active { overflow: hidden; }
 
 
 
+@media (max-width: 768px) {
+  .flex-image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    max-width: 100%; /* Allow the container to take full width */
+    height: auto; /* Allow the container's height to adjust */
+  }
+
+  .flex-image-container img {
+    max-width: 100%; /* Make the image take full width within the container */
+    height: auto; /* Allow the image's height to adjust */
+  }
+}
+
 
 
 /*-----------------------------------*\
