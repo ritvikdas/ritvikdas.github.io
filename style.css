@@ -360,6 +360,22 @@ body.nav-active { overflow: hidden; }
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .hero .container {
+    grid-template-columns: 1fr; /* Adjust the layout to a single column */
+    gap: 20px; /* Adjust the gap between elements */
+  }
+
+  .hero-banner {
+    width: 100%; /* Make the banner full width */
+    max-height: 300px; /* Limit the maximum height */
+  }
+
+  .hero-content {
+    margin-top: 20px; /* Add some spacing between banner and content */
+  }
+}
 
 .hero {
   padding-block-start: calc(var(--section-padding) + 50px);
@@ -374,6 +390,8 @@ body.nav-active { overflow: hidden; }
 .hero-banner {
   position: relative;
   height: auto;
+  width: 100%; /* Make the banner full width */
+  max-height: 300px; /* Limit the maximum height */
   max-width: 100%;
   margin-inline: auto;
 }
